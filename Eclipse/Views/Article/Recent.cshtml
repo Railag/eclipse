@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+@model Eclipse.Models.RecentPostsModel
+
+<div class="boxed">
+    <div class="title">
+        <h2>Lorem Ipsum Dolor</h2>
+    </div>
+    <div class="content">
+        <ul class="list1">
+            <li class="first"><a href="#">@Model.First.PostUri</a></li>
+            @for (int i = 0; i < Model.RecentPostItems.Count; i++)
+            {
+                <li><a href="#">@Model.RecentPostItems.ElementAt(i).PostUri</a></li>
+            }
+        </ul>
+    </div>
+</div>

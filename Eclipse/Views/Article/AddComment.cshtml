@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+@model Eclipse.Models.ArticleModel
+<div class="add-comment">
+<form action="@Url.Action("Index", "Home")" method="post" enctype="multipart/form-data">
+    @Html.ValidationSummary()
+    @*Html.ValidationMessageFor(m => m.NewComment.Text)
+    @Html.ValidationMessageFor(m => m.NewComment.User.Age) *@
+    @Html.TextAreaFor(m => m.NewComment.Text, new { placeholder = "Write your comment here", @class = "txt-area"})
+  @*  <textarea name="comment" class="txt-area" placeholder="Your comment"></textarea> *@
+    @*Html.DropDownListFor(m => m.Country, Model.Countries.Select(i => new SelectListItem() { Value = i, Text = i}).ToList()); //new SelectList(Model.Countries ))//new System.Collections.ObjectModel.Collection<SelectListItem>))*@
+    @*Html.TextBoxFor(m => m.User.Age)
+    @Html.TextBoxFor(m => m.Age)
+    @Html.TextBoxFor(m => m.Avatar, new { type="file" }) *@
+    @Html.TextBoxFor(m => m.NewComment.User.UserName, new { placeholder = "Name", @class = "textbox" }) 
+    @Html.TextBoxFor(m => m.NewComment.User.Age, new { placeholder = "Age", @class = "textbox" })
+    @Html.TextBoxFor(m => m.NewComment.User.Email, new { placeholder = "Email", @class = "textbox" })
+    <div class="wrap-btn">
+        @*<button class="btn-cancel">Cancel</button>*@
+        <button class="btn-save">Add comment</button>
+    </div>
+</form>
+</div>

@@ -1,0 +1,61 @@
+﻿
+@section Header{
+    <div id="logo">
+        <h1><a href="#">Eclipse</a></h1>
+        <h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="active first"><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Blogs</a></li>
+            <li><a href="#" title="">Photos</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>
+        </ul>
+    </div>
+}
+
+@model Eclipse.Models.ArticleModel
+
+    <!-- end #menu -->
+        <div id="content">
+            <div id="welcome" class="post">
+                <div class="title">
+                    <h2>Welcome to Eclipse!</h2>
+                </div>
+                <h3 class="date"><span class="month">@Model.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
+                <div class="meta">
+                    <p>
+                        Posted by @Model.Author under <a href="#">@Model.Categories[0]</a>, <a href="#">@Model.Categories[1]</a><br />
+                        <a href="#">Trackback URI</a> | <a href="#">No Comments</a> | <a href="#">Permalink</a>
+                    </p>
+                </div>
+                <div class="story">
+                    @Model.Text
+                </div>
+            </div>
+            <div class="boxed">
+                @using Eclipse.Models;
+                @if (Model.Comments.Comments.Count > 0) { 
+                for (int i = 0; i < 3 && i < Model.Comments.Comments.Count; i++ )
+                {
+                <div class="title">
+                    <h2>@Model.Comments.Comments.ElementAt(i).User.UserName</h2>
+                </div>
+                <div class="content">
+                    <ul class="list1">
+                            <li><a href="#">@Model.Comments.Comments.ElementAt(i).Text</a></li>
+                            @if(@Model.Comments.Comments.ElementAt(i).User.Age != null) {
+                                <li>Years: @Model.Comments.Comments.ElementAt(i).User.Age</li>
+                            }
+                            @if(@Model.Comments.Comments.ElementAt(i).User.Email != null) {
+                                <li>Email: @Model.Comments.Comments.ElementAt(i).User.Email</li>
+                            }
+                    </ul>
+                </div>
+                }
+                }
+            </div>
+            @Html.Partial("~/Views/Article/AddComment.cshtml")
+        </div>
+        <!-- end #content -->

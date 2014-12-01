@@ -1,0 +1,63 @@
+E:\РВП\Project\Eclipse\Eclipse\obj\Debug\Eclipse.csprojResolveAssemblyReference.cache
+E:\РВП\Project\Eclipse\Eclipse\bin\Eclipse.dll.config
+E:\РВП\Project\Eclipse\Eclipse\bin\Eclipse.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\Eclipse.pdb
+E:\РВП\Project\Eclipse\Eclipse\bin\Microsoft.Web.Infrastructure.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\Newtonsoft.Json.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.Formatting.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.WebRequest.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Helpers.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Http.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Http.WebHost.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Mvc.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Razor.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.Deployment.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.Razor.dll
+E:\РВП\Project\Eclipse\Eclipse\bin\Newtonsoft.Json.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.Formatting.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Net.Http.WebRequest.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Helpers.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Http.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Http.WebHost.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Mvc.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.Razor.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.Deployment.xml
+E:\РВП\Project\Eclipse\Eclipse\bin\System.Web.WebPages.Razor.xml
+E:\РВП\Project\Eclipse\Eclipse\obj\Debug\Eclipse.dll
+E:\РВП\Project\Eclipse\Eclipse\obj\Debug\Eclipse.pdb
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Eclipse.dll.config
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Eclipse.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Eclipse.pdb
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Newtonsoft.Json.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.Formatting.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.WebRequest.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Helpers.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Http.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Http.WebHost.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Mvc.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Razor.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.Razor.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\Newtonsoft.Json.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.Formatting.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Net.Http.WebRequest.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Helpers.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Http.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Http.WebHost.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Mvc.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.Razor.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.Razor.xml
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.dll
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.pdb

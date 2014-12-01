@@ -1,4 +1,4 @@
 eclipse
 =======
 
-C# web blog application
+C# web blog
