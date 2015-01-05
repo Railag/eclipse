@@ -9,19 +9,19 @@ namespace Eclipse.Models
     {
         public RecentPostsItem()
         {
-            this.Text = "Text";
+            this.Title = "Title";
             this.PostUri = new Uri("http://google.com");
             this.CommentsNumber = 33;
         }
 
-        public RecentPostsItem(string Text, Uri PostUri, int CommentsNumber)
+        public RecentPostsItem(string Title, Uri PostUri, int CommentsNumber)
         {
-            this.Text = Text;
+            this.Title = Title;
             this.PostUri = PostUri;
             this.CommentsNumber = CommentsNumber;
         }
 
-        public string Text { get; set; }
+        public string Title { get; set; }
         public Uri PostUri { get; set; }
         public int CommentsNumber { get; set; }
     }

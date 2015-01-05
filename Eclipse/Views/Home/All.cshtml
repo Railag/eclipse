@@ -1,0 +1,50 @@
+﻿@model Eclipse.Models.ArticleModel
+
+@section Header{
+    <div id="logo">
+        <h1><a href="#">Eclipse</a></h1>
+        <h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="active first"><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Blogs</a></li>
+            <li><a href="#" title="">Photos</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>
+        </ul>
+    </div>
+}
+
+<!-- end #menu -->
+<div id="content">
+    @foreach (Eclipse.Models.ArticleItemModel i in Model.Articles) {
+    <div class="post">
+        <div class="title">
+            <h2>Welcome to Eclipse!</h2>
+        </div>
+        <h3 class="date"><span class="month">@i.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
+        <div class="meta">
+            <p>
+                Posted by @i.User.UserName under <a href="#">@i.Categories[0]</a>, <a href="#">@i.Categories[1]</a><br />
+                <a href="#">Trackback URI</a> | <a href="#">No Comments</a> | <a href="#">Permalink</a>
+            </p>
+        </div>
+        <div class="story">
+            @if (i.Text.Length > 100)
+            {
+                @String.Concat(i.Text.Substring(0, 100), "...");
+            }
+            else
+            {
+                @i.Text.ToString(); 
+            }
+
+        </div>
+    </div>
+    }
+    @*PAGINATOR IS REALLY HERE*@
+    </div>
+    @*Html.Partial("~/Views/Article/AddComment.cshtml")*@
+</div>
+<!-- end #content -->

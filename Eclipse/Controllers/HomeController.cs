@@ -14,7 +14,15 @@ namespace Eclipse.Controllers
 
         public ActionResult Index()
         {
-            var model = new ArticleModel();
+            //var model = new ArticleModel();
+            //var model = new Db().GetPostByTitle("title1"); 
+            var model = new Db().GetLastPost();
+            return View(model);
+        }
+
+        public ActionResult All()
+        {
+            var model = new Db().GetPosts();
             return View(model);
         }
 

@@ -15,7 +15,7 @@
     </div>
 }
 
-@model Eclipse.Models.ArticleModel
+@model Eclipse.Models.ArticleItemModel
 
     <!-- end #menu -->
         <div id="content">
@@ -26,7 +26,7 @@
                 <h3 class="date"><span class="month">@Model.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
                 <div class="meta">
                     <p>
-                        Posted by @Model.Author under <a href="#">@Model.Categories[0]</a>, <a href="#">@Model.Categories[1]</a><br />
+                        Posted by @Model.User.UserName under <a href="#">@Model.Categories[0]</a>, <a href="#">@Model.Categories[1]</a><br />
                         <a href="#">Trackback URI</a> | <a href="#">No Comments</a> | <a href="#">Permalink</a>
                     </p>
                 </div>
@@ -55,6 +55,7 @@
                 </div>
                 }
                 }
+                @Html.ActionLink("Other posts", "All")
             </div>
             @Html.Partial("~/Views/Article/AddComment.cshtml")
         </div>

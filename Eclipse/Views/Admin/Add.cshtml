@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 @section Header{
@@ -25,14 +25,16 @@
         <div class="title">
             <h2>Client Account</h2>
         </div>
-            <form id="form1" method="post" action="@Url.Action("Login", "Attempt")">
-                <fieldset>
-                    <legend>Sign-In</legend>
-                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Login:", @class = "textbox", id = "inputtext1" })
-                    @Html.TextBoxFor(m => m.Password, new { placeholder = "Password:", @class = "textbox", id = "inputtext2" })
+        <form id="form1" method="post" action="@Url.Action("Login", "Attempt")">
+            <fieldset>
+                <legend>Sign-In</legend>
+                @Html.TextBoxFor(m => m.Name, new { placeholder = "Login:", @class = "textbox", id = "inputtext1" })
+                @Html.TextBoxFor(m => m.Password, new { placeholder = "Password:", @class = "textbox", id = "inputtext2" })
 
-                    <input id="inputsubmit1" type="submit" name="inputsubmit1" value="Sign In" /> 
-                </fieldset>
-            </form>
+                <input id="inputsubmit1" type="submit" name="inputsubmit1" value="Sign In" />
+            </fieldset>
+        </form>
     </div>
- </div>
+</div>
+
+<h2>Add</h2>

@@ -17,7 +17,7 @@ namespace Eclipse.Controllers
 
         public ActionResult Recent()
         {
-            var model = new CommentModel();
+            var model = new Db().getRecentComments();
             return View(model);
         }
 

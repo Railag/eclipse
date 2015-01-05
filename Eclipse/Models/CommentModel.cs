@@ -10,12 +10,10 @@ namespace Eclipse.Models
     {
         public CommentModel()
         {
-            Comments = new Collection<AddCommentModel>();
+            Comments = new Collection<CommentItemModel>();
             //Comments.Add(new CommentItemModel());
-            First = new CommentItemModel();
         }
 
-        public ICollection<AddCommentModel> Comments { get; set; }
-        public CommentItemModel First { get; set; }
+        public ICollection<CommentItemModel> Comments { get; set; }
     }
 }

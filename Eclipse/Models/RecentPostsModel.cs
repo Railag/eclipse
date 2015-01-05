@@ -11,15 +11,12 @@ namespace Eclipse.Models
         public RecentPostsModel()
         {
             RecentPostItems = new Collection<RecentPostsItem>();
-            //RecentPostItems.Add(new RecentPostsItem(new Uri("http://google.com"), 15));
-            RecentPostItems.Add(new RecentPostsItem());
-            RecentPostItems.Add(new RecentPostsItem());
-            RecentPostItems.Add(new RecentPostsItem());
-            RecentPostItems.Add(new RecentPostsItem());
-            First = new RecentPostsItem();
+            //RecentPostItems.Add(new RecentPostsItem());
+            //RecentPostItems.Add(new RecentPostsItem());
+            //RecentPostItems.Add(new RecentPostsItem());
+            //RecentPostItems.Add(new RecentPostsItem());
         }
 
         public ICollection<RecentPostsItem> RecentPostItems { get; set; }
-        public RecentPostsItem First { get; set; }
     }
 }

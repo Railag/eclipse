@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Header{
+    <div id="logo">
+        <h1><a href="#">Eclipse</a></h1>
+        <h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="active first"><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Blogs</a></li>
+            <li><a href="#" title="">Photos</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>
+        </ul>
+    </div>
+}
+
+@model Eclipse.Models.LoginModel
+
+<div id="content">
+       @Html.ActionLink("Add post", "Add");
+       @Html.ActionLink("See posts", "See");
+       @Html.ActionLink("Edit comments", "EditComments"); 
+</div>
+

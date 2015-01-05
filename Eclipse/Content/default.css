@@ -256,11 +256,15 @@ img.right {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+#inputtext2 {
+    display:block;
+}
 #inputtext1, #inputtext2 {
 	width: 150px;
 }
 
 #inputsubmit1 {
+    display:block;
 	width: 100px;
 	background: transparent url(images/img2.gif) no-repeat left top;
 	color: #CDCDE2;

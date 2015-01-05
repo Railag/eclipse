@@ -61,3 +61,4 @@ C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System.Web.WebPages.Razor.xml
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.dll
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.pdb
+C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.csprojResolveAssemblyReference.cache
