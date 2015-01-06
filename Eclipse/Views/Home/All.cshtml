@@ -21,7 +21,7 @@
     @foreach (Eclipse.Models.ArticleItemModel i in Model.Articles) {
     <div class="post">
         <div class="title">
-            <h2>Welcome to Eclipse!</h2>
+            <h2>@i.Title</h2>
         </div>
         <h3 class="date"><span class="month">@i.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
         <div class="meta">
@@ -46,5 +46,4 @@
     @*PAGINATOR IS REALLY HERE*@
     </div>
     @*Html.Partial("~/Views/Article/AddComment.cshtml")*@
-</div>
 <!-- end #content -->

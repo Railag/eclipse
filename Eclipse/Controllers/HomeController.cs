@@ -20,6 +20,17 @@ namespace Eclipse.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public ActionResult Index(CommentItemModel comment)
+        {
+            Db db = new Db();
+            
+            if(comment != null)
+                db.addComment(comment);
+
+            return View(db.GetLastPost());
+        }
+
         public ActionResult All()
         {
             var model = new Db().GetPosts();

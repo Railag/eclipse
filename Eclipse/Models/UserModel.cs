@@ -15,12 +15,15 @@ namespace Eclipse.Models
             this.Age = 0;
         }
 
-        public UserModel(string UserName, string Email = "", int Age = 0)
+        public UserModel(int UserID, string UserName, string Email = "", int Age = 0)
         {
+            this.UserID = UserID;
             this.UserName = UserName;
             this.Email = Email;
             this.Age = Age;
         }
+
+        public int UserID { get; set; }
 
         [Range(1, 120)]
         public int? Age { get; set; }

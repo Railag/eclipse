@@ -112,15 +112,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Models\AddCommentModel.cs" />
+    <Compile Include="Models\CommentItemModel.cs" />
     <Compile Include="Models\ArticleItemModel.cs" />
     <Compile Include="Models\ArticleModel.cs" />
-    <Compile Include="Models\CommentContainer.cs" />
     <Compile Include="Models\CommentModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -187,13 +185,10 @@
     <Content Include="Views\Shared\Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Admin\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\All.cshtml" />

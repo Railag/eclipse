@@ -16,6 +16,7 @@
     @Html.TextBoxFor(m => m.NewComment.User.UserName, new { placeholder = "Name", @class = "textbox" }) 
     @Html.TextBoxFor(m => m.NewComment.User.Age, new { placeholder = "Age", @class = "textbox" })
     @Html.TextBoxFor(m => m.NewComment.User.Email, new { placeholder = "Email", @class = "textbox" })
+    @Html.Hidden("User.PostID", @Model.PostID)
     <div class="wrap-btn">
         @*<button class="btn-cancel">Cancel</button>*@
         <button class="btn-save">Add comment</button>

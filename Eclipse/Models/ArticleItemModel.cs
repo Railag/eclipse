@@ -19,8 +19,9 @@ namespace Eclipse.Models
             this.Categories[1] = "Category2";
         }
 
-        public ArticleItemModel(UserModel User, String Text, String Title, CommentModel Comments, String[] Categories)
+        public ArticleItemModel(int PostID, UserModel User, String Text, String Title, CommentModel Comments, String[] Categories)
         {
+            this.PostID = PostID;
             Date = DateTime.Now;
             this.User = User;
             this.Text = Text;
@@ -29,6 +30,7 @@ namespace Eclipse.Models
             this.Categories = Categories;
         }
 
+        public int PostID { get; set; }
         public DateTime Date { get; set; }
         public UserModel User { get; set; }
         public String Text { get; set; }
