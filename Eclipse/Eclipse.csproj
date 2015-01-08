@@ -112,6 +112,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -192,6 +193,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\All.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\See.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Edit.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

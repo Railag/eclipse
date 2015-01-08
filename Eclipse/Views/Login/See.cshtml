@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+@model Eclipse.Models.ArticleModel
+@{
+    Eclipse.Models.ArticleItemModel post = null;
+}
+
+@section Header{
+    <div id="logo">
+        <h1><a href="#">Eclipse</a></h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="active first"><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Blogs</a></li>
+            <li><a href="#" title="">Photos</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>
+        </ul>
+    </div>
+}
+
+<div class="boxed">
+    <div class="title">
+        <h2>Recent Posts</h2>
+    </div>
+    <div class="content">
+        <ul class="list1">
+            @for (int i = 0; i < Model.Articles.Count; i++)
+            {
+                post = Model.Articles.ElementAt(i);
+                <li>
+                    @Html.RouteLink(@post.Title, "Post", new { @post.Title })
+                    Author: @post.User.UserName
+                    @if (post.User.Age != null) { 
+                        @Html.Raw("Age:") @post.User.Age
+                    }
+                    @if (post.User.Email != null)
+                    {
+                        @Html.Raw("Email:") @post.User.Email
+                    }
+                    Comments: @post.Comments.Comments.Count
+                </li>
+             
+            }
+        </ul>
+    </div>
+</div>

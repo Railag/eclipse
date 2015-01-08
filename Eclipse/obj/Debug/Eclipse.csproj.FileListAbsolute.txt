@@ -62,3 +62,35 @@ C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\bin\System
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.dll
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.pdb
 C:\Users\Railag\Documents\Visual Studio 2013\Projects\Eclipse\Eclipse\obj\Debug\Eclipse.csprojResolveAssemblyReference.cache
+C:\eclipse\Eclipse\bin\Eclipse.dll.config
+C:\eclipse\Eclipse\bin\Eclipse.dll
+C:\eclipse\Eclipse\bin\Eclipse.pdb
+C:\eclipse\Eclipse\bin\Microsoft.Web.Infrastructure.dll
+C:\eclipse\Eclipse\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\eclipse\Eclipse\bin\Newtonsoft.Json.dll
+C:\eclipse\Eclipse\bin\System.Net.Http.dll
+C:\eclipse\Eclipse\bin\System.Net.Http.Formatting.dll
+C:\eclipse\Eclipse\bin\System.Net.Http.WebRequest.dll
+C:\eclipse\Eclipse\bin\System.Web.Helpers.dll
+C:\eclipse\Eclipse\bin\System.Web.Http.dll
+C:\eclipse\Eclipse\bin\System.Web.Http.WebHost.dll
+C:\eclipse\Eclipse\bin\System.Web.Mvc.dll
+C:\eclipse\Eclipse\bin\System.Web.Razor.dll
+C:\eclipse\Eclipse\bin\System.Web.WebPages.Deployment.dll
+C:\eclipse\Eclipse\bin\System.Web.WebPages.dll
+C:\eclipse\Eclipse\bin\System.Web.WebPages.Razor.dll
+C:\eclipse\Eclipse\bin\Newtonsoft.Json.xml
+C:\eclipse\Eclipse\bin\System.Net.Http.xml
+C:\eclipse\Eclipse\bin\System.Net.Http.Formatting.xml
+C:\eclipse\Eclipse\bin\System.Net.Http.WebRequest.xml
+C:\eclipse\Eclipse\bin\System.Web.Helpers.xml
+C:\eclipse\Eclipse\bin\System.Web.Http.xml
+C:\eclipse\Eclipse\bin\System.Web.Http.WebHost.xml
+C:\eclipse\Eclipse\bin\System.Web.Mvc.xml
+C:\eclipse\Eclipse\bin\System.Web.Razor.xml
+C:\eclipse\Eclipse\bin\System.Web.WebPages.xml
+C:\eclipse\Eclipse\bin\System.Web.WebPages.Deployment.xml
+C:\eclipse\Eclipse\bin\System.Web.WebPages.Razor.xml
+C:\eclipse\Eclipse\obj\Debug\Eclipse.csprojResolveAssemblyReference.cache
+C:\eclipse\Eclipse\obj\Debug\Eclipse.dll
+C:\eclipse\Eclipse\obj\Debug\Eclipse.pdb

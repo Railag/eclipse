@@ -2,7 +2,6 @@
 @section Header{
     <div id="logo">
         <h1><a href="#">Eclipse</a></h1>
-        <h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
     </div>
     <div id="menu">
         <ul>
@@ -16,6 +15,14 @@
 }
 
 @model Eclipse.Models.ArticleItemModel
+@{
+    HttpCookie cookie = Request.Cookies["is_logged"];
+    Boolean isLogged = false;
+    if (cookie != null)
+    {
+        isLogged = true;
+    }
+}
 
     <!-- end #menu -->
         <div id="content">
@@ -23,15 +30,21 @@
                 <div class="title">
                     <h2>@Model.Title</h2>
                 </div>
-                <h3 class="date"><span class="month">@Model.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
+                <h3 class="date"><span class="month">@Model.Date.ToString()</span></h3>
                 <div class="meta">
                     <p>
-                        Posted by @Model.User.UserName under <a href="#">@Model.Categories[0]</a>, <a href="#">@Model.Categories[1]</a><br />
-                        <a href="#">Trackback URI</a> | <a href="#">No Comments</a> | <a href="#">Permalink</a>
+                        Posted by @Model.User.UserName <br />
+                        @if (isLogged)
+                        { 
+                          @Html.Raw("<form id=\"form1\" method=\"post\" action=\"" + @Url.Action("Admin", "Home") + "\">")
+                          @Html.Raw("<input type=\"submit\" name=\"submit\" value=\"EditPost\" />")
+                          @Html.Raw("<input type=\"submit\" name=\"submit\" value=\"DeletePost\" />")
+                          @Html.Raw("<input id=\"post\" name=\"post\" type=\"hidden\" value=" + @Model.PostID + " /> </form>")
+                        }
                     </p>
                 </div>
                 <div class="story">
-                    @Model.Text
+                    @Html.Raw(@Model.Text)
                 </div>
             </div>
             <div class="boxed">
@@ -50,6 +63,13 @@
                             }
                             @if(@Model.Comments.Comments.ElementAt(i).User.Email != null) {
                                 <li>Email: @Model.Comments.Comments.ElementAt(i).User.Email</li>
+                            }
+                            
+                            @if (isLogged)
+                            {
+                              @Html.Raw("<form id=\"form2\" method=\"post\" action=\"" + @Url.Action("Admin", "Home") + "\">")
+                              @Html.Raw("<input type=\"submit\" name=\"submit\" value=\"DeleteComment\" />")
+                              @Html.Raw("<input id=\"comment\" name=\"comment\" type=\"hidden\" value=" + @Model.Comments.Comments.ElementAt(i).CommentID + " /> </form>");
                             }
                     </ul>
                 </div>

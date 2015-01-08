@@ -13,6 +13,11 @@ namespace Eclipse
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute(  
+                name: "Post",
+                url:"posts/{title}", 
+                defaults: new { controller = "Home",  action = "Index", title = ""});
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

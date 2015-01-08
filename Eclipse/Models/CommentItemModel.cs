@@ -16,26 +16,42 @@ namespace Eclipse.Models
             this.Date = DateTime.Now;
         }
 
-        public CommentItemModel(DateTime Date, String Text, int PostID, UserModel User)
+        public CommentItemModel(DateTime Date, String Text, int PostID, UserModel User, string PostTitle = "")
         {
             this.User = User;
             this.Text = Text;
             this.PostID = PostID;
             this.Date = Date;
+            this.PostTitle = PostTitle;
         }
 
-      //  public readonly ICollection<string> Countries = new Collection<string>() { "Russia", "Belarus", "Ukraine" };
+        public CommentItemModel(String Text, int PostID, UserModel User)
+        {
+            this.User = User;
+            this.Text = Text;
+            this.PostID = PostID;
+            this.Date = DateTime.Now;
+        }
 
-      //  public string Country { get; set; }
+        public CommentItemModel(int CommentID, String Text, int PostID, UserModel User, string PostTitle)
+        {
+            this.CommentID = CommentID;
+            this.User = User;
+            this.Text = Text;
+            this.PostID = PostID;
+            this.Date = DateTime.Now;
+            this.PostTitle = PostTitle;
+        }
+
+        public int CommentID { get; set; }
+
         [Required(ErrorMessage="Заполните поле {0}")]
         [Display(Name="Комментарий")]
         public string Text { get; set; }
         public DateTime Date { get; set; }
         public int PostID { get; set; }
-      //  public int Age { get; set; }
-      //  public HttpPostedFileWrapper Avatar { get; set; }
+        public string PostTitle { get; set; }
 
-      //  public string UserName { get; set; }
         public UserModel User { get; set; }
     }
 }

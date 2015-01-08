@@ -9,11 +9,6 @@ namespace Eclipse.Controllers
 {
     public class CommentController : Controller
     {
-        public ActionResult Index()
-        {
-            var model = new CommentModel();
-            return View(model);
-        }
 
         public ActionResult Recent()
         {

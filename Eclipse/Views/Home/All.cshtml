@@ -1,9 +1,11 @@
 ﻿@model Eclipse.Models.ArticleModel
-
+@{
+    Eclipse.Models.ArticleItemModel i;
+    int CurrentMinPost = @Model.CurrentLastPage - 10;
+}
 @section Header{
     <div id="logo">
         <h1><a href="#">Eclipse</a></h1>
-        <h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>
     </div>
     <div id="menu">
         <ul>
@@ -18,16 +20,20 @@
 
 <!-- end #menu -->
 <div id="content">
-    @foreach (Eclipse.Models.ArticleItemModel i in Model.Articles) {
+    @for (int j = @Model.CurrentLastPage - 10; j < @Model.CurrentLastPage; j++) {
+        if (j < 0)
+        {
+            j = 0;
+        }
+        i = @Model.Articles.ElementAt(j);
     <div class="post">
         <div class="title">
-            <h2>@i.Title</h2>
+            <h2>@Html.RouteLink(i.Title, "Post", new { i.Title })</h2>
         </div>
-        <h3 class="date"><span class="month">@i.Date.ToString()</span> @*<span class="day">@Model.Date.Day</span><span class="year">, @Model.Date.Year</span>*@</h3>
+        <h3 class="date"><span class="month">@i.Date.ToString()</span> </h3>
         <div class="meta">
             <p>
-                Posted by @i.User.UserName under <a href="#">@i.Categories[0]</a>, <a href="#">@i.Categories[1]</a><br />
-                <a href="#">Trackback URI</a> | <a href="#">No Comments</a> | <a href="#">Permalink</a>
+                Posted by @i.User.UserName<br />
             </p>
         </div>
         <div class="story">
@@ -37,13 +43,24 @@
             }
             else
             {
-                @i.Text.ToString(); 
+                @Html.Raw(i.Text)
             }
 
         </div>
     </div>
     }
-    @*PAGINATOR IS REALLY HERE*@
+    @if (Model.Articles.Count > 10)
+    {
+        @Html.Raw("<form id=\"form1\" method=\"post\" action=\"" + @Url.Action("All", "Home")+"\">")
+        if (CurrentMinPost != 0) {
+            @Html.Raw("<input id=\"inputsubmit1\" type=\"submit\" name=\"submit\" value=\"Left\" />")
+        }
+        @CurrentMinPost @Html.Raw("-") @Model.CurrentLastPage @Html.HiddenFor(m => m.CurrentLastPage)
+        if (@Model.CurrentLastPage != 0)
+        {
+            @Html.Raw("<input id=\"inputsubmit1\" type=\"submit\" name=\"submit\" value=\"Right\" /></form>")
+        }
+
+    }
     </div>
-    @*Html.Partial("~/Views/Article/AddComment.cshtml")*@
 <!-- end #content -->

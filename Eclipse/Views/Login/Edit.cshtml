@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@model Eclipse.Models.ArticleItemModel
+
+@section Header{
+    <div id="logo">
+        <h1><a href="#">Eclipse</a></h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li class="active first"><a href="#" title="">Home</a></li>
+            <li><a href="#" title="">Blogs</a></li>
+            <li><a href="#" title="">Photos</a></li>
+            <li><a href="#" title="">About</a></li>
+            <li><a href="#" title="">Contact</a></li>
+        </ul>
+    </div>
+}
+
+<div id="content">
+
+    <form id="form1" method="post" action="@Url.Action("UpdatePost", "Admin")">
+        <fieldset>
+            <legend>Add Post</legend>
+            @Html.TextBoxFor(m => m.Title, new { value = @Model.Title, @class = "textbox", id = "inputtext1" })
+            @Html.TextAreaFor(m => m.Text, new { placeholder = "Text:", @class = "textbox", id = "inputtext2" })
+            @Html.TextBoxFor(m => m.User.UserName, new { placeholder = "Author:", @class = "textbox", id = "inputtext2" })
+            @Html.TextBoxFor(m => m.User.Age, new { placeholder = "Age:", @class = "textbox", id = "inputtext2" })
+            @Html.TextBoxFor(m => m.User.Email, new { placeholder = "Email:", @class = "textbox", id = "inputtext2" })
+            @Html.HiddenFor(m => m.User.UserID)
+            @Html.HiddenFor(m => m.PostID)
+
+            <input id="inputsubmit1" type="submit" name="inputsubmit1" value="Add Post" />
+        </fieldset>
+    </form>
+</div>
+

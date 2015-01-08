@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eclipse.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,25 +12,24 @@ namespace Eclipse.Controllers
         //
         // GET: /Admin/
 
-        public ActionResult Index()
+        [HttpPost]
+        public ActionResult AddPost(ArticleItemModel post)
         {
-
-            return View();
+            var cookieCheck = Request.Cookies["is_logged"];
+            if (cookieCheck == null)
+                RedirectToAction("Login");
+            new Db().addPost(post);
+            return RedirectToAction("Index", "Login");
         }
 
-        public ActionResult Add()
+        [HttpPost]
+        public ActionResult UpdatePost(ArticleItemModel post)
         {
-            return View();
-        }
-
-        public ActionResult See()
-        {
-            return View();
-        }
-
-        public ActionResult EditComment()
-        {
-            return View();
+            var cookieCheck = Request.Cookies["is_logged"];
+            if (cookieCheck == null)
+                RedirectToAction("Login");
+            new Db().updatePost(post);
+            return RedirectToAction("Index", "Login");
         }
 
     }

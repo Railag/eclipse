@@ -27,7 +27,7 @@ namespace Eclipse.Models
 
         [Range(1, 120)]
         public int? Age { get; set; }
-        [RegularExpression(@"\w+@\w+\.\w+")]
+        [RegularExpression(@"\w+\@\w+\.\w+")]
         public string Email { get; set; }
         [Required]
         public string UserName { get; set;  }

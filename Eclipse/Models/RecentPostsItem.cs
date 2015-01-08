@@ -10,19 +10,16 @@ namespace Eclipse.Models
         public RecentPostsItem()
         {
             this.Title = "Title";
-            this.PostUri = new Uri("http://google.com");
-            this.CommentsNumber = 33;
+            this.CommentsNumber = 0;
         }
 
-        public RecentPostsItem(string Title, Uri PostUri, int CommentsNumber)
+        public RecentPostsItem(string Title, int CommentsNumber)
         {
             this.Title = Title;
-            this.PostUri = PostUri;
             this.CommentsNumber = CommentsNumber;
         }
 
         public string Title { get; set; }
-        public Uri PostUri { get; set; }
         public int CommentsNumber { get; set; }
     }
 }

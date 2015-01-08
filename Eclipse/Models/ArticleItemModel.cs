@@ -28,6 +28,8 @@ namespace Eclipse.Models
             this.Title = Title;
             this.Comments = Comments;
             this.Categories = Categories;
+            this.NewComment = new CommentItemModel();
+            this.NewComment.PostID = PostID;
         }
 
         public int PostID { get; set; }
